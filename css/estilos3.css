@@ -1,0 +1,90 @@
+body{
+	margin: 0;
+  	color:#4e4e4e;
+  	font:400 14px/21px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  	background-color: #fff;
+  	min-width: 1000px;
+  	-webkit-text-size-adjust: 100%;
+  	-ms-text-size-adjust: none;
+}
+
+header{
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+nav{
+	background: #363636;
+	margin-top: 20px;
+	position: relative;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow:hidden; 
+}
+
+nav > ul > li{
+	float: left;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 10px 20px;
+}
+
+nav ul li a:hover{
+	background: #808080;
+}
+
+nav > ul > li:hover div{
+	display: table;
+}
+
+/*submenu*/
+nav ul li div{
+	width: 10000px;
+	position: absolute;
+	left: 0;
+	background: #ccc;
+	box-sizing: border-box;
+	display: block;
+}
+
+nav ul li div ul{
+	width: 20%;
+	display: block;
+	border-right: 1px solid rgba(255,255,255,.5);
+	box-sizing: border-box;
+}
+
+nav ul li div ul:last-child{
+	border: none;
+}
+
+nav ul li div ul li a{
+	color:#000; 
+}
+
+nav ul li div ul li a:hover{
+	color: #fff;
+}
+
+#nav>.home,
+#nav>.home>a{
+  border-color: transparent;
+}
+#nav .home span{
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 15px;
+  background: url(img/sprite.png) no-repeat -159px -204px;
+  text-indent: -9999px;
+  overflow: hidden;
+}

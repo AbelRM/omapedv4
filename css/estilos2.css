@@ -1,0 +1,81 @@
+/*
+body{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #fff;
+}*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #fff;
+}
+
+.navegacion{
+	width: 1000px;
+	margin: 0px auto;
+	background: #4e4e4e;
+	z-index: 50;
+	
+}
+.navegacion ul{
+	list-style: none;
+}
+
+.menuprincipal > li{
+	/*position: relative;*/
+	/*border-left: 1px solid #efefef;*/
+	display: inline-block;
+}
+
+.menuprincipal>li>a{
+	display: block;
+	padding: 15px 20px;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menuprincipal li a:hover{
+	background: #707B7C;
+	transition: all .2s;
+	color: #fff;
+}
+
+/*submenu*/
+.sub-menu{
+	position: absolute;
+	background: #707B7C;
+	width: 120%
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+	z-index: 80;
+	
+}
+.sub-menu li a{
+	display: block;
+	padding: 16px;
+	color: #000;
+	font-family: 'Arial';
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.sub-menu li a:hover {
+	background: #2E4053;
+	color: #fff;
+}
+.menuprincipal li:hover .sub-menu{
+	
+	visibility: visible;
+	opacity: 1;
+}
